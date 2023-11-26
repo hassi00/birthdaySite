@@ -9,17 +9,17 @@ body {
 
 .easel {
   position: relative;
-  width: 240px;
-  height: 330px;
+  width: 360px; /* 240pxの1.5倍 */
+  height: 495px; /* 330pxの1.5倍 */
   margin-top: 50px;
 }
 
 .top-clip {
   position: absolute;
   top: 0;
-  width: 20%;
-  height: 30px;
-  background: #75450e;
+  width: 30%; /* 20%の1.5倍 */
+  height: 45px; /* 30pxの1.5倍 */
+  background: #b69b4c;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -27,54 +27,56 @@ body {
 
 .canvas {
   position: absolute;
-  top: 15px;
+  top: 22.5px; /* 15pxの1.5倍 */
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 300px; /* 200pxの1.5倍 */
+  height: 300px; /* 200pxの1.5倍 */
   background: #fff;
-  border: 5px solid #f0efec;
-  transform: translateX(-50%); /* 中心を合わせるために左に50%移動 */
+
+  transform: translateX(-50%);
+  padding:0px;
+  margin:0px;
 }
 
 .shelf {
   position: absolute;
-  bottom: 100px;
-  left: 50%; /* 親要素の中心から開始 */
-  width: 250px; /* キャンバスと同じ幅 */
-  height: 10px;
+  bottom: 150px; /* 100pxの1.5倍 */
+  left: 50%;
+  width: 375px; /* 250pxの1.5倍 */
+  height: 20px; /* 10pxの1.5倍 */
   background: #b69b4c;
-  transform: translateX(-50%); /* 中心を合わせるために左に50%移動 */
+  transform: translateX(-50%);
 }
 
 .leg {
   position: absolute;
-  bottom: 10px;
-  width: 20px;
-  height: 120px;
+  bottom: 15px; /* 10pxの1.5倍 */
+  width: 30px; /* 20pxの1.5倍 */
+  height: 180px; /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
 
 #left-leg {
   left: 50%;
-  transform: translateX(-10%) rotate(15deg); /* Adjusted to match the angle from the back */
+  transform: translateX(-15%) rotate(15deg);
   position: absolute;
   bottom: 0;
-  left: 10%; /* イーゼルの中心から開始 */
-  width: 20px;
-  height: 120px; /* 足の長さ */
+  left: 15%; /* 10%の1.5倍 */
+  width: 30px; /* 20pxの1.5倍 */
+  height: 600px; /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
 
 #right-leg {
   left: 50%;
-  transform: translateX(10%) rotate(-15deg); /* Adjusted to match the angle from the back */
+  transform: translateX(15%) rotate(-15deg);
   position: absolute;
   bottom: 0;
-  left: 90%; /* イーゼルの中心から開始 */
-  width: 20px;
-  height: 120px; /* 足の長さ */
+  left: 75%; /* 90%の1.5倍 */
+  width: 30px; /* 20pxの1.5倍 */
+  height: 600px; /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
@@ -82,9 +84,9 @@ body {
 #back-leg {
   position: absolute;
   bottom: 0;
-  left: 50%; /* イーゼルの中心から開始 */
-  width: 20px;
-  height: 120px; /* 足の長さ */
+  left: 45%;
+  width: 30px; /* 20pxの1.5倍 */
+  height: 180px; /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
