@@ -27,10 +27,10 @@ body {
 
 .canvas {
   position: absolute;
-  top: 22.5px; /* 15pxの1.5倍 */
+  top: 150px; /* 22.5pxの1.5倍 */
   left: 50%;
-  width: 300px; /* 200pxの1.5倍 */
-  height: 300px; /* 200pxの1.5倍 */
+  width: 300px; /* 200pxの1.5 */
+  height: 75px; /* 300pxの1/4 */
   background: #fff;
 
   transform: translateX(-50%);

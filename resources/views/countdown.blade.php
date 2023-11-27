@@ -15,5 +15,7 @@
     <div class="leg" id="right-leg"></div>
     <div class="leg" id="back-leg"></div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="{{ asset('js/animation.js') }}"></script>
 </body>
 </html>
