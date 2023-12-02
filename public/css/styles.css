@@ -26,7 +26,7 @@ body {
 }
 
 .canvas {
-  position: absolute;
+  position: relative;
   top: 150px; /* 22.5pxの1.5倍 */
   left: 50%;
   width: 300px; /* 200pxの1.5 */
@@ -36,6 +36,14 @@ body {
   transform: translateX(-50%);
   padding:0px;
   margin:0px;
+}
+
+.countdown {
+  position: absolute;
+  top: 50%;   /* 親要素の中央に配置 */
+  left: 50%;  /* 親要素の中央に配置 */
+  transform: translate(-50%, -50%); /* 中央寄せのために自身のサイズの半分をオフセット */
+  /* その他のスタイリング、例えばテキストサイズ、色など */
 }
 
 .shelf {

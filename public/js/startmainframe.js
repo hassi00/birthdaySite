@@ -1,5 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-  
+import { Counter } from './NumberCounter.js';
+
+document.addEventListener('DOMContentLoaded', function() 
+{
+
+
+  let countdownNumber = 10;
+ const countdownElement = document.getElementById('countdown');
+  let counter = new Counter(countdownNumber,countdownElement);
+
   let timeline = gsap.timeline();
   timeline.from("#left-leg", {
     duration: 1.0,
@@ -38,7 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
     duration: 0.5,
     y: -500,
     delay: 0.0,
-    ease: "power4.out"
-  });
-  
-}); 
+    ease: "power4.out",
+
+    onComplete: () => {
+      // イーゼルのアニメーションが終了した後にカウントダウンを開始
+      const countdownInterval = setInterval(()=>{counter.updateCountdown(gsap,countdownInterval)}, 1000); // 1秒ごとに更新
+  }
+})
+});

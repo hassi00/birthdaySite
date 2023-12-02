@@ -9,13 +9,16 @@
 <body>
 <div class="easel">
     <div class="top-clip"></div>
-    <div class="canvas"></div>
+    <div class="canvas">
+      <div class="countdown" id="countdown">1</div>
+    </div>
     <div class="shelf"></div>
     <div class="leg" id="left-leg"></div>
     <div class="leg" id="right-leg"></div>
     <div class="leg" id="back-leg"></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="{{ asset('js/animation.js') }}"></script>
+<script type="module" src="{{ asset('js/NumberCounter.js') }}"></script>
+<script type="module" src="{{ asset('js/startmainframe.js') }}"></script>
 </body>
 </html>
