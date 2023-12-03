@@ -11,6 +11,18 @@
     <div class="top-clip"></div>
     <div class="canvas">
       <div class="countdown" id="countdown">1</div>
+      <div class="paint-splatter">
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+        <div class="paint-drop"></div>
+</div>
     </div>
     <div class="shelf"></div>
     <div class="leg" id="left-leg"></div>

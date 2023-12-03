@@ -1,8 +1,11 @@
+import { splatterPaint } from './splatterPaint.js';
+
 export class Counter {
 
   constructor(countDownNumber, countdownElement) {
     this.countDownNumber = countDownNumber;
     this.countdownElement = countdownElement;
+    this.paintDrops = document.querySelectorAll('.paint-drop');
   }
 
   updateCountdown(gsap,countdownInterval) {
@@ -21,6 +24,8 @@ export class Counter {
       clearInterval(countdownInterval);
       this.countdownElement.textContent = '終了！';
     }
+
+    splatterPaint(gsap,this.paintDrops);
   }
 
 
