@@ -112,3 +112,10 @@ body {
   display: none;
   /* 必要に応じて初期位置を設定 */
 }
+
+#countdown {
+  font-family: 'Potta One';
+  font-weight: bold;
+  color:rgb(252, 168, 12);
+  font-size:50px;
+}
