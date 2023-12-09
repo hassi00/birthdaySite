@@ -1,5 +1,6 @@
 import { Counter } from './NumberCounter.js';
 
+
 document.addEventListener('DOMContentLoaded', function() 
 {
 
@@ -7,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function()
   let countdownNumber = 10;
  const countdownElement = document.getElementById('countdown');
   let counter = new Counter(countdownNumber,countdownElement);
+
+  
 
   let timeline = gsap.timeline();
   timeline.from("#left-leg", {
@@ -51,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function()
     onComplete: () => {
       // イーゼルのアニメーションが終了した後にカウントダウンを開始
       const countdownInterval = setInterval(()=>{counter.updateCountdown(gsap,countdownInterval)}, 1000); // 1秒ごとに更新
+      
   }
 })
 });

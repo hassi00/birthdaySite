@@ -1,4 +1,5 @@
 import { splatterPaint } from './splatterPaint.js';
+import {easelTransparenter} from './easelTransparenter.js';
 
 export class Counter {
 
@@ -6,6 +7,7 @@ export class Counter {
     this.countDownNumber = countDownNumber;
     this.countdownElement = countdownElement;
     this.paintDrops = document.querySelectorAll('.paint-drop');
+    this.transparenter = new easelTransparenter();
   }
 
   updateCountdown(gsap,countdownInterval) {
@@ -23,6 +25,8 @@ export class Counter {
     if (this.countDownNumber <= 0) {
       clearInterval(countdownInterval);
       this.countdownElement.textContent = '終了！';
+
+      this.transparenter.makeTransparent(gsap);
     }
 
     splatterPaint(gsap,this.paintDrops);
