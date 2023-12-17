@@ -9,6 +9,7 @@
 
 </head>
 <body>
+<main-content>
 <div class="easel">
     <div class="top-clip"></div>
     <div class="canvas">
@@ -31,8 +32,17 @@
     <div class="leg" id="right-leg"></div>
     <div class="leg" id="back-leg"></div>
 </div>
+<div id="happy-birthday"></div>
+<div id="balloon">
+  <img id="balloonBlue" src="{{ asset('images/balloon/blueballoon.png') }}" />
+  <img id="balloonGold" src="{{ asset('images/balloon/goldballoon.png') }}" />
+  <img id="balloonRed" src="{{ asset('images/balloon/redballoon.png') }}" />
+  <img id="balloonYellow" src="{{ asset('images/balloon/yellowballoon.png') }}"/>
+</div>
+</main-content>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script type="module" src="{{ asset('js/NumberCounter.js') }}"></script>
 <script type="module" src="{{ asset('js/startmainframe.js') }}"></script>
+
 </body>
 </html>

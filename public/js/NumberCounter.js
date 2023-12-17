@@ -1,5 +1,7 @@
 import { splatterPaint } from './splatterPaint.js';
 import {easelTransparenter} from './easelTransparenter.js';
+import {happyBirthdayText} from './happyBirthdayText.js';
+import {balloon} from './balloon.js';
 
 export class Counter {
 
@@ -8,6 +10,9 @@ export class Counter {
     this.countdownElement = countdownElement;
     this.paintDrops = document.querySelectorAll('.paint-drop');
     this.transparenter = new easelTransparenter();
+    this.baloon = new balloon();
+    this.happyBirthdayText = new happyBirthdayText(this.baloon);
+    
   }
 
   updateCountdown(gsap,countdownInterval) {
@@ -24,9 +29,9 @@ export class Counter {
 
     if (this.countDownNumber <= 0) {
       clearInterval(countdownInterval);
-      this.countdownElement.textContent = '終了！';
-
-      this.transparenter.makeTransparent(gsap);
+      this.happyBirthdayText.DisplayBirthdayText(gsap,"Happy Birth day", "#happy-birthday");
+      this.transparenter.makeTransparent(gsap,this.happyBirthdayText);
+      
     }
 
     splatterPaint(gsap,this.paintDrops);

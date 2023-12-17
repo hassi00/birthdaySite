@@ -1,4 +1,4 @@
-export class easelTransparenter {
+export class happybirthdayAnimation {
 
   // constructor(countdownElement) {
   //   this.countdownElement = countdownElement;
@@ -8,9 +8,8 @@ export class easelTransparenter {
     
     }
 
-  makeTransparent(gsap,happyBirthdayText) {
+  doAnimation(timeline) {
     // 要素を跳ねさせて回転するアニメーション
-    let timeline = gsap.timeline();
     timeline.to(".leg",{
       opacity:0,
       duration:1
@@ -24,9 +23,6 @@ export class easelTransparenter {
       opacity:0,
       duration:1
     })
-    .add(() => {
-      
-    });
   }
 
 
