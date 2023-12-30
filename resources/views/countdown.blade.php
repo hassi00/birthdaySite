@@ -44,6 +44,8 @@
 <script type="module" src="{{ asset('js/AnimationTimeLine.js') }}"></script>
 <script type="module" src="{{ asset('js/EaselAnimation.js') }}"></script>
 <script type="module" src="{{ asset('js/MainFrame.js') }}"></script>
+<script type="module" src="{{ asset('js/NumberCountAnimation.js') }}"></script>
+<script type="module" src="{{ asset('js/HappyBirthdayTextAnimation.js') }}"></script>
 
 </body>
 </html>
