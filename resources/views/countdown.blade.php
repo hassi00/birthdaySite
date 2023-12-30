@@ -41,8 +41,9 @@
 </div>
 </main-content>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script type="module" src="{{ asset('js/NumberCounter.js') }}"></script>
-<script type="module" src="{{ asset('js/startmainframe.js') }}"></script>
+<script type="module" src="{{ asset('js/AnimationTimeLine.js') }}"></script>
+<script type="module" src="{{ asset('js/EaselAnimation.js') }}"></script>
+<script type="module" src="{{ asset('js/MainFrame.js') }}"></script>
 
 </body>
 </html>
