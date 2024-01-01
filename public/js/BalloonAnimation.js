@@ -1,12 +1,16 @@
-export class balloon{
+import { BaseAnimation } from "./BaseAnimation.js";
+
+export class BalloonAnimation extends BaseAnimation{
 
   constructor(){
-
+    super();
   }
 
-  show(gsap){
+  play(){
+
     let timeline = gsap.timeline();
-    timeline.to("#balloonBlue", {
+
+    return timeline.to("#balloonBlue", {
       opacity: 1,
       duration: 1,
       delay: 0.5,
@@ -30,5 +34,4 @@ export class balloon{
       display: 'inline-block',
     })
   }
-
 }
