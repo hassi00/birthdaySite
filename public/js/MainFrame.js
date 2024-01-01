@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     timeline.addAnimation(new EaselAnimation());
 
     const countdownElement = document.getElementById('countdown');
-    timeline.addAnimation(new NumberCountAnimation(10,countdownElement));
+    timeline.addAnimation(new NumberCountAnimation(3,countdownElement));
     timeline.addAnimation(new HappyBirthdayTextAnimation("Happy/Birth/day", "#happy-birthday"));
     timeline.addAnimation(new EaselTransparentAnimation());
     timeline.addAnimation(new BalloonAnimation());

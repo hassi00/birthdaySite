@@ -11,6 +11,10 @@ span {
   display: inline-block;
 }
 
+#mainContent {
+  position:relative;
+}
+
 .easel {
   position: relative;
   width: 360px; /* 240pxの1.5倍 */
@@ -135,61 +139,23 @@ span {
   font-weight: bold;
   color:rgb(252, 168, 12);
   text-align: center;
-  font-size: 1em;
+  font-size: 2em;
   /* その他のスタイリング */
 }
 
 
+#balloon-container {
+  position: absolute;
+  width: 100%; /* コンテナの幅 */
+  height: 50%; /* コンテナの高さ */
+  top:50%;
+  /* overflow: hidden; はみ出した風船を非表示にする */
+}
+
 .balloon {
   position: absolute;
-  top:50%;
-  left:50%;
+  opacity: 0; /* 初期状態では透明 */
   width: 100px; /* または任意のサイズ */
   height: auto;
-  display: none;
-  opacity: 0; /* 初期状態では不可視 */
-  margin: 20px auto; /* センタリング */
-}
-
-#balloonBlue {
-  position: absolute;
-  top:50%;
-  left:20%;
-  width: 100px; /* または任意のサイズ */
-  height: auto;
-  opacity: 0; /* 初期状態では不可視 */
-  margin: 20px auto; /* センタリング */
-}
-
-#balloonRed {
-  position: absolute;
-  top:50%;
-  left:40%;
-  width: 100px; /* または任意のサイズ */
-  height: auto;
-  opacity: 0; /* 初期状態では不可視 */
-  display: block; /* またはnoneで初期状態を非表示に */
-  margin: 20px auto; /* センタリング */
-}
-
-#balloonGold {
-  position: absolute;
-  top:50%;
-  left:60%;
-  width: 100px; /* または任意のサイズ */
-  height: auto;
-  opacity: 0; /* 初期状態では不可視 */
-  display: block; /* またはnoneで初期状態を非表示に */
-  margin: 20px auto; /* センタリング */
-}
-
-#balloonYellow {
-  position: absolute;
-  top:50%;
-  left:80%;
-  width: 100px; /* または任意のサイズ */
-  height: auto;
-  opacity: 0; /* 初期状態では不可視 */
-  display: block; /* またはnoneで初期状態を非表示に */
-  margin: 20px auto; /* センタリング */
+  /* 風船のサイズは画像に応じて設定 */
 }
