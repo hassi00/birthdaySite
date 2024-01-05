@@ -12,8 +12,6 @@ export class HappyBirthdayTextAnimation extends BaseAnimation {
       const container = document.querySelector(this.containerSelector);
       container.innerHTML = ""; // コンテナを空にする
 
-      console.log("Logging this.text:", this.text);
-
       const characters = [...this.text];
       // 文字列を一文字ずつ分割してアニメーションを適用
       characters.forEach((char, index) => {

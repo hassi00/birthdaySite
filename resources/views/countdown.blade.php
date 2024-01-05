@@ -7,6 +7,7 @@
   <title>Easel Recreation</title>
   <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
 </head>
 
@@ -37,6 +38,14 @@
     <div id="happy-birthday"></div>
     <div id="balloon-container"></div>
   </div>
+  <div class="messageContent">
+    <div class ="message1">ありうえお</div>
+    <div class ="message2">かきくけこ</div>
+    <div class ="message3">さしすせそ</div>
+    <div class ="message4">たちつてと</div>
+    <div class ="message5">なにぬねの</div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script type="module" src="{{ asset('js/AnimationTimeLine.js') }}"></script>
   <script type="module" src="{{ asset('js/EaselAnimation.js') }}"></script>

@@ -1,10 +1,11 @@
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* 子要素を縦方向に並べる */
+  justify-content: flex-start; /* 始まりの位置から要素を配置 */
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #f0f0f0;
+  background: #ffffffff;
 }
 
 span {
@@ -13,6 +14,8 @@ span {
 
 #mainContent {
   position:relative;
+  display: block;
+  height: 100vh; /* 一画面分の高さにする */
 }
 
 .easel {
@@ -39,7 +42,7 @@ span {
   left: 50%;
   width: 300px; /* 200pxの1.5 */
   height: 75px; /* 300pxの1/4 */
-  background: #fff;
+  background: #f7f3e8;
 
   transform: translateX(-50%);
   padding:0px;
@@ -128,16 +131,15 @@ span {
   font-size:50px;
 }
 
-#happy-birthday {
+#happy-birthday{
+  font-family: 'Abril Fatface';
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
   text-align:center;
   /* opacity: 0; */
-  font-family: 'Potta One';
-  font-weight: bold;
-  color:rgb(252, 168, 12);
+  color:rgb(9, 9, 9);
   text-align: center;
   font-size: 2em;
   /* その他のスタイリング */
@@ -158,4 +160,24 @@ span {
   width: 100px; /* または任意のサイズ */
   height: auto;
   /* 風船のサイズは画像に応じて設定 */
+}
+
+.messageContent{
+  position:relative;
+  display: block;
+  /* background:url('/images/ribbon.png');
+  background-repeat: repeat-y; */
+  margin: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.messageContent div { /* .message1, .message2, .message3, .message4, .message5 に適用されます */
+  background:url('/images/ribbon.png');
+  width: 100%; /* 親要素の幅に合わせる */
+  height: 100vh; /* 一画面分の高さにする */
+  display: flex; /* Flexbox レイアウトを使う */
+  justify-content: center; /* 横方向を中心に */
+  align-items: center; /* 縦方向を中心に */
+  text-align: center; /* テキストを中央寄せ */
 }
