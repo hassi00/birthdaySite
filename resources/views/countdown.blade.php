@@ -14,36 +14,39 @@
 <body>
   <div id="mainContent">
     <div class="easel">
-      <div class="top-clip"></div>
-      <div class="canvas">
-        <div class="countdown" id="countdown">1</div>
-        <div class="paint-splatter">
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
-          <div class="paint-drop"></div>
+      <div class="canvasArea">
+        <div class="top-clip"></div>
+        <div class="canvas">
+          <div class="countdown" id="countdown">1</div>
+          <div class="paint-splatter">
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+            <div class="paint-drop"></div>
+          </div>
         </div>
+        <div class="shelf"></div>
+        <div class="leg" id="left-leg"></div>
+        <div class="leg" id="right-leg"></div>
+        <div class="leg" id="back-leg"></div>
       </div>
-      <div class="shelf"></div>
-      <div class="leg" id="left-leg"></div>
-      <div class="leg" id="right-leg"></div>
-      <div class="leg" id="back-leg"></div>
+      <div id="happy-birthday"></div>
     </div>
-    <div id="happy-birthday"></div>
+    
     <div id="balloon-container"></div>
   </div>
   <div class="messageContent">
-    <div class ="message1">ありうえお</div>
-    <div class ="message2">かきくけこ</div>
-    <div class ="message3">さしすせそ</div>
-    <div class ="message4">たちつてと</div>
-    <div class ="message5">なにぬねの</div>
+    <div class="message1">ありうえお</div>
+    <div class="message2">かきくけこ</div>
+    <div class="message3">さしすせそ</div>
+    <div class="message4">たちつてと</div>
+    <div class="message5">なにぬねの</div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

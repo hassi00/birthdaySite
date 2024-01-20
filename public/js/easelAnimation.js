@@ -1,6 +1,5 @@
 import { BaseAnimation } from "./BaseAnimation.js";
 
-
 export class EaselAnimation extends BaseAnimation{
 
     constructor(){
@@ -45,7 +44,7 @@ export class EaselAnimation extends BaseAnimation{
         })
         .from(".top-clip", {
           duration: 0.5,
-          y: -500,
+          y: -1500,
           delay: 0.0,
           ease: "power4.out",
             

@@ -3,7 +3,6 @@ body {
   flex-direction: column; /* 子要素を縦方向に並べる */
   justify-content: flex-start; /* 始まりの位置から要素を配置 */
   align-items: center;
-  height: 100vh;
   margin: 0;
   background: #ffffffff;
 }
@@ -16,38 +15,53 @@ span {
   position:relative;
   display: block;
   height: 100vh; /* 一画面分の高さにする */
+  width:100vh;
 }
 
 .easel {
-  position: relative;
+  position: absolute;
   width: 360px; /* 240pxの1.5倍 */
   height: 495px; /* 330pxの1.5倍 */
   margin-top: 50px;
+  height: 100vh;
+  width: 100vh;
+}
+
+
+.canvasArea{
+  position: absolute;
+  /* top: 150px; 22.5pxの1.5倍 */
+  top:50%;
+  left: 50%;
+  width: 300px; /* 200pxの1.5 */
+  height: 300px; /* canvasのサイズ */ 
+  transform: translate(-50%,-50%); 
+  z-index: 1000;
 }
 
 .top-clip {
   position: absolute;
   top: 0;
-  width: 30%; /* 20%の1.5倍 */
-  height: 45px; /* 30pxの1.5倍 */
+  width: 50%; /* 20%の1.5倍 */
+  height: 10%; /* 30pxの1.5倍 */
   background: #b69b4c;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  transform: translate(-50%,-80%);
+  z-index: 1500;
 }
 
 .canvas {
-  position: relative;
-  top: 150px; /* 22.5pxの1.5倍 */
+  position: absolute;
+  top:50%;
   left: 50%;
-  width: 300px; /* 200pxの1.5 */
-  height: 75px; /* 300pxの1/4 */
   background: #f7f3e8;
-
-  transform: translateX(-50%);
+  width: 300px; /* 200pxの1.5 */
+  height: 75px; /* 300pxの1/4 */ 
+  transform: translate(-50%,-50%); 
   padding:0px;
   margin:0px;
   overflow:hidden;
+  z-index: 1100;
 }
 
 .countdown {
@@ -62,10 +76,12 @@ span {
   position: absolute;
   bottom: 150px; /* 100pxの1.5倍 */
   left: 50%;
+  top:100%;
   width: 375px; /* 250pxの1.5倍 */
   height: 20px; /* 10pxの1.5倍 */
   background: #b69b4c;
   transform: translateX(-50%);
+  z-index:2000;
 }
 
 .leg {
@@ -78,8 +94,9 @@ span {
 }
 
 #left-leg {
+  top:50%;
   left: 50%;
-  transform: translateX(-15%) rotate(15deg);
+  transform: translate(-15%,-50%) rotate(15deg);
   position: absolute;
   bottom: 0;
   left: 15%; /* 10%の1.5倍 */
@@ -90,8 +107,9 @@ span {
 }
 
 #right-leg {
+  top:50%;
   left: 50%;
-  transform: translateX(15%) rotate(-15deg);
+  transform: translate(15%,-50%) rotate(-15deg);
   position: absolute;
   bottom: 0;
   left: 75%; /* 90%の1.5倍 */
@@ -102,12 +120,14 @@ span {
 }
 
 #back-leg {
+  top:100%;
   position: absolute;
   bottom: 0;
   left: 45%;
   width: 30px; /* 20pxの1.5倍 */
   height: 180px; /* 120pxの1.5倍 */
   background: #b69b4c;
+  transform: translateY(-50%);
   z-index: -1;
 }
 
@@ -142,7 +162,7 @@ span {
   color:rgb(9, 9, 9);
   text-align: center;
   font-size: 2em;
-  /* その他のスタイリング */
+  z-index: 2500;
 }
 
 
@@ -174,6 +194,8 @@ span {
 
 .messageContent div { /* .message1, .message2, .message3, .message4, .message5 に適用されます */
   background:url('/images/ribbon.png');
+  background-position: center;
+  background-size: cover;
   width: 100%; /* 親要素の幅に合わせる */
   height: 100vh; /* 一画面分の高さにする */
   display: flex; /* Flexbox レイアウトを使う */
