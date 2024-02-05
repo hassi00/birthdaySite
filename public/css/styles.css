@@ -203,3 +203,42 @@ span {
   align-items: center; /* 縦方向を中心に */
   text-align: center; /* テキストを中央寄せ */
 }
+
+
+
+#cake-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#cake {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#candle-container {
+  position: absolute;
+  left: 50%; /* コンテナを中心に配置 */
+  transform: translate(400%,-80%);
+}
+
+#candleYellow {
+  position: relative;
+  width: 50px; /* ろうそくの幅を指定 */
+  height: 200px; /* ろうそくの高さを指定 */
+}
+
+#flame {
+  position: absolute;
+  bottom: 100%; /* ろうそくの上部に配置 */
+  left: 50%; /* ろうそくの中央に配置 */
+  transform: translateX(-50%);
+  width: 50px; /* 炎の幅を指定 */
+  height: 60px; /* 炎の高さを指定 */
+}
+

@@ -49,6 +49,15 @@
     <div class="message5">なにぬねの</div>
   </div>
 
+  <div id="cake-container">
+  <img id="cake" src="{{ asset('images/cake/cake.png') }}" alt="Cake">
+  <div id="candle-container">
+    <img id="candleYellow" src="{{ asset('images/cake/ロウソク黄.png') }}" alt="Candle">
+    <img id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
+  </div>
+</div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script type="module" src="{{ asset('js/AnimationTimeLine.js') }}"></script>
   <script type="module" src="{{ asset('js/EaselAnimation.js') }}"></script>
