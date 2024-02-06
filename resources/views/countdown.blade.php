@@ -51,9 +51,21 @@
 
   <div id="cake-container">
   <img id="cake" src="{{ asset('images/cake/cake.png') }}" alt="Cake">
-  <div id="candle-container">
-    <img id="candleYellow" src="{{ asset('images/cake/ロウソク黄.png') }}" alt="Candle">
-    <img id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
+  <div id="candleYellow-container">
+    <img class="candle" id="candleYellow" src="{{ asset('images/cake/ロウソク黄.png') }}" alt="Candle">
+    <img class="flame" id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
+  </div>
+  <div id="candleBlue-container">
+    <img  class="candle" id="candleBlue" src="{{ asset('images/cake/ロウソク青.png') }}" alt="Candle">
+    <img  class="flame" id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
+  </div>
+  <div id="candleRed-container">
+    <img class="candle" id="candleRed" src="{{ asset('images/cake/ロウソク赤.png') }}" alt="Candle">
+    <img class="flame" id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
+  </div>
+  <div id="candleGreen-container">
+    <img class="candle" id="candleGreen" src="{{ asset('images/cake/ロウソク緑.png') }}" alt="Candle">
+    <img  class="flame" id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
   </div>
 </div>
 

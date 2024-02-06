@@ -221,23 +221,41 @@ span {
   object-fit: contain;
 }
 
-#candle-container {
+#candleYellow-container {
   position: absolute;
-  left: 50%; /* コンテナを中心に配置 */
-  transform: translate(400%,-80%);
+  left: 70%; /* コンテナを中心に配置 */
+  top:15%;
 }
 
-#candleYellow {
-  position: relative;
+#candleBlue-container {
+  position: absolute;
+  left: 65%; /* コンテナを中心に配置 */
+  top:30%;
+}
+
+#candleRed-container {
+  position: absolute;
+  left: 30%; /* コンテナを中心に配置 */
+  top:30%;
+}
+
+#candleGreen-container {
+  position: absolute;
+  left: 25%; /* コンテナを中心に配置 */
+  top:15%;
+}
+
+.candle {
+  position: absolute;
   width: 50px; /* ろうそくの幅を指定 */
   height: 200px; /* ろうそくの高さを指定 */
+  left: 50%; /* ろうそくの中央に配置 */
 }
 
-#flame {
+.flame {
   position: absolute;
   bottom: 100%; /* ろうそくの上部に配置 */
   left: 50%; /* ろうそくの中央に配置 */
-  transform: translateX(-50%);
   width: 50px; /* 炎の幅を指定 */
   height: 60px; /* 炎の高さを指定 */
 }
