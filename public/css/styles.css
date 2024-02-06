@@ -223,26 +223,26 @@ span {
 
 #candleYellow-container {
   position: absolute;
-  left: 70%; /* コンテナを中心に配置 */
-  top:15%;
+  left: 63%; /* コンテナを中心に配置 */
+  top:10%;
 }
 
 #candleBlue-container {
   position: absolute;
-  left: 65%; /* コンテナを中心に配置 */
-  top:30%;
+  left: 60%; /* コンテナを中心に配置 */
+  top:25%;
 }
 
 #candleRed-container {
   position: absolute;
-  left: 30%; /* コンテナを中心に配置 */
-  top:30%;
+  left: 38%; /* コンテナを中心に配置 */
+  top:25%;
 }
 
 #candleGreen-container {
   position: absolute;
-  left: 25%; /* コンテナを中心に配置 */
-  top:15%;
+  left: 35%; /* コンテナを中心に配置 */
+  top:10%;
 }
 
 .candle {
