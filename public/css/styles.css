@@ -260,3 +260,9 @@ span {
   height: 60px; /* 炎の高さを指定 */
 }
 
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+

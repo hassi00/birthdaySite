@@ -67,6 +67,8 @@
     <img class="candle" id="candleGreen" src="{{ asset('images/cake/ロウソク緑.png') }}" alt="Candle">
     <img  class="flame" id="flame" src="{{ asset('images/cake/flame.png') }}" alt="Flame">
   </div>
+
+  <button id="blow-candle">ろうそくを吹く</button>
 </div>
 
 

@@ -4,6 +4,7 @@ import {EaselAnimation} from './easelAnimation.js';
 import {EaselTransparentAnimation} from './EaselTransparentAnimation.js';
 import {HappyBirthdayTextAnimation} from './HappyBirthdayTextAnimation.js';
 import {BalloonAnimation} from './BalloonAnimation.js';
+import { BlowCandle } from './BlowCandle.js';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -18,4 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // タイムラインを開始
     timeline.start();
+
+    document.getElementById('blow-candle').addEventListener('click',BlowCandle);
+
 });
