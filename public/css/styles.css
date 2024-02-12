@@ -1,7 +1,9 @@
 body {
   display: flex;
-  flex-direction: column; /* 子要素を縦方向に並べる */
-  justify-content: flex-start; /* 始まりの位置から要素を配置 */
+  flex-direction: column;
+  /* 子要素を縦方向に並べる */
+  justify-content: flex-start;
+  /* 始まりの位置から要素を配置 */
   align-items: center;
   margin: 0;
   background: #ffffffff;
@@ -12,120 +14,146 @@ span {
 }
 
 #mainContent {
-  position:relative;
+  position: relative;
   display: block;
-  height: 100vh; /* 一画面分の高さにする */
-  width:100vh;
+  height: 100vh;
+  /* 一画面分の高さにする */
+  width: 100vh;
 }
 
 .easel {
   position: absolute;
-  width: 360px; /* 240pxの1.5倍 */
-  height: 495px; /* 330pxの1.5倍 */
+  width: 360px;
+  /* 240pxの1.5倍 */
+  height: 495px;
+  /* 330pxの1.5倍 */
   margin-top: 50px;
   height: 100vh;
   width: 100vh;
 }
 
 
-.canvasArea{
+.canvasArea {
   position: absolute;
   /* top: 150px; 22.5pxの1.5倍 */
-  top:50%;
+  top: 50%;
   left: 50%;
-  width: 300px; /* 200pxの1.5 */
-  height: 300px; /* canvasのサイズ */ 
-  transform: translate(-50%,-50%); 
+  width: 300px;
+  /* 200pxの1.5 */
+  height: 300px;
+  /* canvasのサイズ */
+  transform: translate(-50%, -50%);
   z-index: 1000;
 }
 
 .top-clip {
   position: absolute;
   top: 0;
-  width: 50%; /* 20%の1.5倍 */
-  height: 10%; /* 30pxの1.5倍 */
+  width: 50%;
+  /* 20%の1.5倍 */
+  height: 10%;
+  /* 30pxの1.5倍 */
   background: #b69b4c;
   left: 50%;
-  transform: translate(-50%,-80%);
+  transform: translate(-50%, -80%);
   z-index: 1500;
 }
 
 .canvas {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   background: #faf8f2;
-  width: 300px; /* 200pxの1.5 */
-  height: 75px; /* 300pxの1/4 */ 
-  transform: translate(-50%,-50%); 
-  padding:0px;
-  margin:0px;
-  overflow:hidden;
+  width: 300px;
+  /* 200pxの1.5 */
+  height: 75px;
+  /* 300pxの1/4 */
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
   z-index: 1100;
 }
 
 .countdown {
   position: absolute;
-  top: 50%;   /* 親要素の中央に配置 */
-  left: 50%;  /* 親要素の中央に配置 */
-  transform: translate(-50%, -50%); /* 中央寄せのために自身のサイズの半分をオフセット */
+  top: 50%;
+  /* 親要素の中央に配置 */
+  left: 50%;
+  /* 親要素の中央に配置 */
+  transform: translate(-50%, -50%);
+  /* 中央寄せのために自身のサイズの半分をオフセット */
   /* その他のスタイリング、例えばテキストサイズ、色など */
 }
 
 .shelf {
   position: absolute;
-  bottom: 150px; /* 100pxの1.5倍 */
+  bottom: 150px;
+  /* 100pxの1.5倍 */
   left: 50%;
-  top:100%;
-  width: 375px; /* 250pxの1.5倍 */
-  height: 20px; /* 10pxの1.5倍 */
+  top: 100%;
+  width: 375px;
+  /* 250pxの1.5倍 */
+  height: 20px;
+  /* 10pxの1.5倍 */
   background: #b69b4c;
   transform: translateX(-50%);
-  z-index:2000;
+  z-index: 2000;
 }
 
 .leg {
   position: absolute;
-  bottom: 15px; /* 10pxの1.5倍 */
-  width: 30px; /* 20pxの1.5倍 */
-  height: 180px; /* 120pxの1.5倍 */
+  bottom: 15px;
+  /* 10pxの1.5倍 */
+  width: 30px;
+  /* 20pxの1.5倍 */
+  height: 180px;
+  /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
 
 #left-leg {
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-15%,-50%) rotate(15deg);
+  transform: translate(-15%, -50%) rotate(15deg);
   position: absolute;
   bottom: 0;
-  left: 15%; /* 10%の1.5倍 */
-  width: 30px; /* 20pxの1.5倍 */
-  height: 600px; /* 120pxの1.5倍 */
+  left: 15%;
+  /* 10%の1.5倍 */
+  width: 30px;
+  /* 20pxの1.5倍 */
+  height: 600px;
+  /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
 
 #right-leg {
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate(15%,-50%) rotate(-15deg);
+  transform: translate(15%, -50%) rotate(-15deg);
   position: absolute;
   bottom: 0;
-  left: 75%; /* 90%の1.5倍 */
-  width: 30px; /* 20pxの1.5倍 */
-  height: 600px; /* 120pxの1.5倍 */
+  left: 75%;
+  /* 90%の1.5倍 */
+  width: 30px;
+  /* 20pxの1.5倍 */
+  height: 600px;
+  /* 120pxの1.5倍 */
   background: #b69b4c;
   z-index: -1;
 }
 
 #back-leg {
-  top:100%;
+  top: 100%;
   position: absolute;
   bottom: 0;
   left: 45%;
-  width: 30px; /* 20pxの1.5倍 */
-  height: 180px; /* 120pxの1.5倍 */
+  width: 30px;
+  /* 20pxの1.5倍 */
+  height: 180px;
+  /* 120pxの1.5倍 */
   background: #b69b4c;
   transform: translateY(-50%);
   z-index: -1;
@@ -135,10 +163,13 @@ span {
 .paint-drop {
   width: 10px;
   height: 10px;
-  top: 50%;   /* 親要素の中央に配置 */
-  left: 50%;  /* 親要素の中央に配置 */
+  top: 50%;
+  /* 親要素の中央に配置 */
+  left: 50%;
+  /* 親要素の中央に配置 */
   border-radius: 50%;
-  background-color: rgb(255, 217, 0); /* お好みの色 */
+  background-color: rgb(255, 217, 0);
+  /* お好みの色 */
   position: absolute;
   display: none;
   /* 必要に応じて初期位置を設定 */
@@ -147,19 +178,19 @@ span {
 #countdown {
   font-family: 'Potta One';
   font-weight: bold;
-  color:rgb(252, 168, 12);
-  font-size:50px;
+  color: rgb(252, 168, 12);
+  font-size: 50px;
 }
 
-#happy-birthday{
+#happy-birthday {
   font-family: 'Abril Fatface';
   position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  text-align:center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   /* opacity: 0; */
-  color:rgb(9, 9, 9);
+  color: rgb(9, 9, 9);
   text-align: center;
   font-size: 2em;
   z-index: 2500;
@@ -168,22 +199,26 @@ span {
 
 #balloon-container {
   position: absolute;
-  width: 100%; /* コンテナの幅 */
-  height: 50%; /* コンテナの高さ */
-  top:50%;
+  width: 100%;
+  /* コンテナの幅 */
+  height: 50%;
+  /* コンテナの高さ */
+  top: 50%;
   /* overflow: hidden; はみ出した風船を非表示にする */
 }
 
 .balloon {
   position: absolute;
-  opacity: 0; /* 初期状態では透明 */
-  width: 100px; /* または任意のサイズ */
+  opacity: 0;
+  /* 初期状態では透明 */
+  width: 100px;
+  /* または任意のサイズ */
   height: auto;
   /* 風船のサイズは画像に応じて設定 */
 }
 
-.messageContent{
-  position:relative;
+.messageContent {
+  position: relative;
   display: block;
   /* background:url('/images/ribbon.png');
   background-repeat: repeat-y; */
@@ -192,16 +227,23 @@ span {
   text-align: center;
 }
 
-.messageContent div { /* .message1, .message2, .message3, .message4, .message5 に適用されます */
-  background:url('/images/ribbon.png');
+.messageContent div {
+  /* .message1, .message2, .message3, .message4, .message5 に適用されます */
+  background: url('/images/ribbon.png');
   background-position: center;
   background-size: cover;
-  width: 100%; /* 親要素の幅に合わせる */
-  height: 100vh; /* 一画面分の高さにする */
-  display: flex; /* Flexbox レイアウトを使う */
-  justify-content: center; /* 横方向を中心に */
-  align-items: center; /* 縦方向を中心に */
-  text-align: center; /* テキストを中央寄せ */
+  width: 100%;
+  /* 親要素の幅に合わせる */
+  height: 100vh;
+  /* 一画面分の高さにする */
+  display: flex;
+  /* Flexbox レイアウトを使う */
+  justify-content: center;
+  /* 横方向を中心に */
+  align-items: center;
+  /* 縦方向を中心に */
+  text-align: center;
+  /* テキストを中央寄せ */
 }
 
 
@@ -223,46 +265,88 @@ span {
 
 #candleYellow-container {
   position: absolute;
-  left: 63%; /* コンテナを中心に配置 */
-  top:10%;
+  left: 63%;
+  /* コンテナを中心に配置 */
+  top: 10%;
 }
 
 #candleBlue-container {
   position: absolute;
-  left: 60%; /* コンテナを中心に配置 */
-  top:25%;
+  left: 60%;
+  /* コンテナを中心に配置 */
+  top: 25%;
 }
 
 #candleRed-container {
   position: absolute;
-  left: 38%; /* コンテナを中心に配置 */
-  top:25%;
+  left: 38%;
+  /* コンテナを中心に配置 */
+  top: 25%;
 }
 
 #candleGreen-container {
   position: absolute;
-  left: 35%; /* コンテナを中心に配置 */
-  top:10%;
+  left: 35%;
+  /* コンテナを中心に配置 */
+  top: 10%;
 }
 
 .candle {
   position: absolute;
-  width: 50px; /* ろうそくの幅を指定 */
-  height: 200px; /* ろうそくの高さを指定 */
-  left: 50%; /* ろうそくの中央に配置 */
+  width: 50px;
+  /* ろうそくの幅を指定 */
+  height: 200px;
+  /* ろうそくの高さを指定 */
+  left: 50%;
+  /* ろうそくの中央に配置 */
 }
 
 .flame {
   position: absolute;
-  bottom: 100%; /* ろうそくの上部に配置 */
-  left: 50%; /* ろうそくの中央に配置 */
-  width: 50px; /* 炎の幅を指定 */
-  height: 60px; /* 炎の高さを指定 */
+  bottom: 100%;
+  /* ろうそくの上部に配置 */
+  left: 50%;
+  /* ろうそくの中央に配置 */
+  width: 50px;
+  /* 炎の幅を指定 */
+  height: 60px;
+  /* 炎の高さを指定 */
 }
 
 
 button {
   margin-top: 20px;
   padding: 10px 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+  /* グラデーション背景 */
+  color: white;
+  /* テキスト色 */
+  border: none;
+  /* 枠線なし */
+  cursor: pointer;
+  /* カーソルをポインターに */
+  padding: 15px 30px;
+  /* パディング */
+  border-radius: 30px;
+  /* 丸みを帯びた角 */
+  font-size: 16px;
+  /* フォントサイズ */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* 影を追加 */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+
+#blow-candle:hover {
+  transform: translate(-50%,-2px); /* ホバー時に少し上に移動 */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* ホバー時の影を強調 */
+}
+
+#blow-candle:active {
+  transform: translate(-50%,1px); /* クリック時に少し下に移動 */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* クリック時の影を調整 */
+}
