@@ -71,6 +71,15 @@
   <button id="blow-candle">ろうそくを吹く</button>
 </div>
 
+<div id="picturesContainer">
+  <div class="cover-slide">
+    <img  class="animal" id="animal1" src="{{ asset('images/memories/sample.jpg') }}" alt="Flame">
+  </div>
+
+</div>
+
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script type="module" src="{{ asset('js/AnimationTimeLine.js') }}"></script>

@@ -350,3 +350,20 @@ button {
   transform: translate(-50%,1px); /* クリック時に少し下に移動 */
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* クリック時の影を調整 */
 }
+
+
+
+#animal1{
+  max-width: 100%;
+}
+
+.cover-slide::after{
+  content: '';
+  position:absolute;
+  z-index: 2;
+  top: 0;
+  left:0;
+  right: 0;
+  left: 0;
+  background-color: aliceblue;
+}
