@@ -74,7 +74,9 @@
 <div id="picturesContainer">
   <div class="cover-slide">
     <img  class="animal" id="animal1" src="{{ asset('images/memories/sample.jpg') }}" alt="Flame">
+    <div class="cover-slide1"></div>
   </div>
+  
 
 </div>
 
